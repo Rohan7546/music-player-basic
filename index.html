@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="musicIcon" id="musicIconImage"><img src="assets/musicicon.svg" alt="musicPlayer"></li>
+            <li class="home" id="homeNavigator">Home</li>
+            <li class="aboutUs" id="aboutUsLink">About Us</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="leftBoxContent" id="leftBox">
+            <img src="songImage/image1.jpg" id="leftBoxImage" alt="imageBackground">
+        </div>
+        <div class="rightBoxContent" id="rightBox">
+            <div class="banner"><img id="bannerImage"></div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="rangeBar" min="0" value="0" max="100">
+        <div class="bottom-container">
+            <div class="wrapper-1">
+            <img class="bottom-icon" src="assets/prev.svg" id="bottom-prev-icon" alt="prev" />
+            <img class="bottom-icon" src="assets/play.svg" id="bottom-play-icon" alt="play/pause" />
+            <img class="bottom-icon" src="assets/next.svg" id="bottom-next-icon" alt="next" />
+        </div>
+        <div class="wrapper-2">
+            <span class="bottom-text">
+                <img id="bottomSongImage" src="songImage/image1.jpg" />
+                <span id="bottomSongName">Song1</span>
+            </span>
+        </div>
+        </div>
+        
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/f50f335134.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+body{
+    background-color: black;
+    color: white;
+}
+nav {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+    height: 50px;
+    padding: 2px 0px 6px 0px;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+ 
+}
+ul li {
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+}
+.musicIcon img {
+    width: 40px;
+}
+.leftBoxContent {
+    @media (min-width: 600px) {
+        width: 65vw;        
+    }
+    @media (max-width: 600px) {
+        width: 100vw;
+    }
+    background-color: rgb(246, 246, 246);
+    height: inherit;
+    background-color: black;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.rightBoxContent {
+    @media (min-width: 600px) {
+        width: 35vw;        
+    }
+    @media (max-width: 600px) {
+        width: 95vw;
+    }
+    background-color: black;
+    height: inherit;
+    overflow-y: scroll;
+}
+.container {
+    height: 80vh;
+    display: flex;
+    @media (min-width: 600px) {
+        flex-direction: row; 
+    }
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+    
+}
+.leftBoxContent img {
+    max-width: 80%;
+}
+.songImage {
+    height: 40px;
+    border: 2px solid #eeeeee;
+    border-radius: 10px;
+}
+.banner-Image{
+    height: 40px;
+    width: 70%;
+}
+.banner {
+    text-align: center;
+}
+.songList {
+    border-top: 0.1px solid grey;
+    border-bottom: 0.1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px;
+}
+.play-pause {
+    width: 30px;
+}
+.songName {
+    margin: auto;
+}
+.bottom-icon, #bottomSongImage {
+    width: 100px;
+}
+#rangeBar {
+    width: 100%;
+}
+.bottom-container {
+    display: flex;
+    margin: auto;
+    @media (max-width: 600px) {
+        flex-direction: column-reverse;
+    }
+}
+#bottomSongName {
+    display: flex;
+    justify-content: center;
+}
+.bottom-text {
+    margin: auto;
+}
+#homeNavigator, #aboutUsLink, #rangeBar, .bottom-icon, .play-pause {
+    cursor: pointer;
+}
+.wrapper-2 {
+    @media (max-width: 600px) {
+        display: flex;
+        margin: 10px 0px;
+        
+    }
+    @media (min-width: 600px) {
+        margin: auto;
+    }
+}
+.wrapper-1 {
+    @media (max-width: 600px) {
+        margin: auto;
+    }
+}
